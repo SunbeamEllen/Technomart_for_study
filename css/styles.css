@@ -1,0 +1,101 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow {
+    width: 22px;
+    height: 40px;
+    background-position: -5px -5px;
+}
+
+.sprite-bookmark {
+    width: 14px;
+    height: 16px;
+    background-position: -5px -55px;
+}
+
+.sprite-cart {
+    width: 17px;
+    height: 16px;
+    background-position: -5px -81px;
+}
+
+.sprite-check-mark {
+    width: 39px;
+    height: 30px;
+    background-position: -5px -107px;
+}
+
+.sprite-chek-on {
+    width: 27px;
+    height: 23px;
+    background-position: -5px -147px;
+}
+
+.sprite-fb {
+    width: 10px;
+    height: 18px;
+    background-position: -5px -180px;
+}
+
+.sprite-inst {
+    width: 17px;
+    height: 17px;
+    background-position: -5px -208px;
+}
+
+.sprite-login {
+    width: 20px;
+    height: 17px;
+    background-position: -5px -235px;
+}
+
+.sprite-login-hover {
+    width: 20px;
+    height: 17px;
+    background-position: -5px -262px;
+}
+
+.sprite-phone {
+    width: 19px;
+    height: 19px;
+    background-position: -5px -289px;
+}
+
+.sprite-radio-on {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -318px;
+}
+
+.sprite-search {
+    width: 17px;
+    height: 17px;
+    background-position: -5px -353px;
+}
+
+.sprite-search-active {
+    width: 17px;
+    height: 17px;
+    background-position: -5px -380px;
+}
+
+.sprite-user {
+    width: 20px;
+    height: 18px;
+    background-position: -5px -407px;
+}
+
+.sprite-user-hover {
+    width: 20px;
+    height: 18px;
+    background-position: -5px -435px;
+}
+
+.sprite-vk {
+    width: 20px;
+    height: 12px;
+    background-position: -5px -463px;
+}
