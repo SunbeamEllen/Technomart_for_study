@@ -1,101 +1,137 @@
 .sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
+  background-image: url(spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 
 .sprite-arrow {
-    width: 22px;
-    height: 40px;
-    background-position: -5px -5px;
+  width: 22px;
+  height: 40px;
+  background-position: -5px -5px;
 }
 
 .sprite-bookmark {
-    width: 14px;
-    height: 16px;
-    background-position: -5px -55px;
+  width: 14px;
+  height: 16px;
+  background-position: -5px -55px;
 }
 
 .sprite-cart {
-    width: 17px;
-    height: 16px;
-    background-position: -5px -81px;
+  width: 17px;
+  height: 16px;
+  background-position: -5px -81px;
 }
 
 .sprite-check-mark {
-    width: 39px;
-    height: 30px;
-    background-position: -5px -107px;
+  width: 39px;
+  height: 30px;
+  background-position: -5px -107px;
 }
 
 .sprite-chek-on {
-    width: 27px;
-    height: 23px;
-    background-position: -5px -147px;
+  width: 27px;
+  height: 23px;
+  background-position: -5px -147px;
+}
+
+.sprite-delivery {
+  width: 78px;
+  height: 63px;
+  background-position: -5px -180px;
+}
+
+.sprite-discounts {
+  width: 59px;
+  height: 72px;
+  background-position: -5px -253px;
+}
+
+.sprite-equipment {
+  width: 78px;
+  height: 62px;
+  background-position: -5px -335px;
 }
 
 .sprite-fb {
-    width: 10px;
-    height: 18px;
-    background-position: -5px -180px;
+  width: 10px;
+  height: 18px;
+  background-position: -5px -407px;
 }
 
 .sprite-inst {
-    width: 17px;
-    height: 17px;
-    background-position: -5px -208px;
+  width: 17px;
+  height: 17px;
+  background-position: -5px -435px;
+}
+
+.sprite-instrument {
+  width: 75px;
+  height: 61px;
+  background-position: -5px -462px;
 }
 
 .sprite-login {
-    width: 20px;
-    height: 17px;
-    background-position: -5px -235px;
+  width: 20px;
+  height: 17px;
+  background-position: -5px -533px;
 }
 
 .sprite-login-hover {
-    width: 20px;
-    height: 17px;
-    background-position: -5px -262px;
+  width: 20px;
+  height: 17px;
+  background-position: -5px -560px;
+}
+
+.sprite-materials {
+  width: 44px;
+  height: 65px;
+  background-position: -5px -587px;
 }
 
 .sprite-phone {
-    width: 19px;
-    height: 19px;
-    background-position: -5px -289px;
+  width: 19px;
+  height: 19px;
+  background-position: -5px -662px;
 }
 
 .sprite-radio-on {
-    width: 25px;
-    height: 25px;
-    background-position: -5px -318px;
+  width: 25px;
+  height: 25px;
+  background-position: -5px -691px;
 }
 
 .sprite-search {
-    width: 17px;
-    height: 17px;
-    background-position: -5px -353px;
+  width: 17px;
+  height: 17px;
+  background-position: -5px -726px;
 }
 
 .sprite-search-active {
-    width: 17px;
-    height: 17px;
-    background-position: -5px -380px;
+  width: 17px;
+  height: 17px;
+  background-position: -5px -753px;
+}
+
+.sprite-tab-shape {
+  width: 10px;
+  height: 272px;
+  background-position: -5px -780px;
 }
 
 .sprite-user {
-    width: 20px;
-    height: 18px;
-    background-position: -5px -407px;
+  width: 20px;
+  height: 18px;
+  background-position: -5px -1062px;
 }
 
 .sprite-user-hover {
-    width: 20px;
-    height: 18px;
-    background-position: -5px -435px;
+  width: 20px;
+  height: 18px;
+  background-position: -5px -1090px;
 }
 
 .sprite-vk {
-    width: 20px;
-    height: 12px;
-    background-position: -5px -463px;
+  width: 20px;
+  height: 12px;
+  background-position: -5px -1118px;
 }
