@@ -1,3 +1,23 @@
+body {
+  min-width: 960px;
+  margin: 0 auto;
+  font: 13px/24px "PTSans", "Arial", sans-serif;
+  color: #000;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .sprite {
   background-image: url(spritesheet.png);
   background-repeat: no-repeat;
@@ -135,3 +155,302 @@
   height: 12px;
   background-position: -5px -1118px;
 }
+
+/*=========HEADER=========*/
+.main-header {
+  margin-bottom: 60px;
+}
+
+.top-header {
+  background-color: #293449;
+}
+
+.logo {
+  float: left;
+  width: 220px;
+  background-color: #ee3643;
+}
+
+.user-panel {
+  float: left;
+  width: 720px;
+  font-size: 0;
+}
+
+.panel-item {
+  width: 150px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 17px;
+}
+
+.panel-link {
+  color: rgba(255, 255, 255, 1);
+}
+
+.search {
+  width: 270px;
+}
+
+.search-input {
+  width: 100%;
+}
+
+.bottom-header {
+  background-color: #f1f5f7;
+  padding-top: 46px;
+  padding-bottom: 60px;
+}
+
+.about-magazine {
+  float: left;
+  width: 200px;
+  margin-left: 53px;
+  margin-right: 67px; 
+}
+
+.contact-info {
+  float: left;
+  width: 270px;
+}
+
+.user-block {
+  float: right;
+  width: 280px;
+}
+
+.page-nav {
+  float: left;
+  width: 100%;
+}
+
+.list-item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.item-link {
+  display: block;
+  font-size: 17px;
+}
+/*=========HEADER END=========*/
+
+/*=========INDEX=========*/
+.store-goods {
+  width: 100%;
+}
+
+.store-item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.store-item:last-child,
+.discounts,
+.delivery {
+  margin-right: 0;
+}
+
+.store {
+  width: 100%;
+  margin-bottom: 52px;
+}
+
+.slider {
+  float: left;
+  width: 620px;
+}
+
+.store-function {
+  float: right;
+  width: 300px;
+}
+
+.popular {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #f7f3ec;
+}
+
+.popular-title {
+  float: left;
+}
+
+.btn {
+  width: 250px;
+  background-color: #f7f3ec;
+}
+
+.popular-btn {
+  float: right;
+}
+
+.goods {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 0;
+}
+
+.catalog-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  margin-right: ;
+  font-size: 17px;
+  line-height: 18px;
+  margin-right: 20px;
+}
+
+.goods .catalog-item:nth-child(4n+4) {
+  margin-right: 0;
+}
+
+.producers {
+  width: 100%;
+  margin-bottom: 80px;
+  font-size: 0;
+}
+
+.producers-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+.producers-item:nth-child(4n+4) {
+  margin-right: 0;
+}
+
+.our-features {
+  width: 100%;
+  margin-bottom: 80px;
+  background-color: #f2f6f8;
+}
+
+.services-text {
+  width: 400px;
+  margin-bottom: 70px;
+}
+
+.tabs-controls {
+  float: left;
+  width: 240px;
+}
+
+.tabs-list {
+  float: right;
+  width: 620px;
+}
+
+.information {
+  margin-bottom: 80px;
+}
+
+.about {
+  float: left;
+  width: 540px;
+}
+
+.contacts {
+  float: right;
+  width: 300px;
+}
+/*=========INDEX END=========*/
+
+/*=========FOOTER=========*/
+.footer-top {
+  width: 100%;
+  background-color: #32425c;
+}
+
+.footer-logo {
+  float: left;
+  width: 220px;
+  background-color: #ee3643;
+}
+
+.footer-nav {
+  float: right;
+  width: 550px;
+}
+
+.nav-list{
+  font-size: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.nav-link {
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.adress {
+  float: left;
+  width: 330px;
+}
+
+.footer-menu {
+  float: right;
+  width: 530px;
+}
+
+.menu-list {
+  font-size: 0;
+}
+
+.menu-item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menu-link {
+  display: block;
+  font-size: 18px;
+  color: #ffd180;
+}
+
+.footer-bottom {
+  width: 100%;
+  background-color: #293449;
+}
+
+.footer-coopyright {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+  margin-right: 60px;
+}
+
+.feedback {
+  float: left;
+  width: 160px;
+}
+
+.designed {
+  float: right;
+  width: 160px;
+}
+
+/*=========FOOTER END=========*/
+
+.modal-content {
+  display: none;
+}
+
+
+
+

@@ -7,29 +7,31 @@
 </head>
 <body>
 	<header class="main-header">
-		<div class="container">
-			<header class="top-header clearfix">
+		<header class="top-header">
+			<div class="container clearfix">
 				<div class="logo">
 					<a class="logo-link" href="#">техномарт</a>
 				</div>
 				<div class="user-panel">
-					<div class="search">
+					<div class="panel-item search">
 						<input class="search-input" type="search" name="search" id="search">
 						<label class="search-label" for="search">Поиск</label>
 					</div>
-					<div class="bookmarks">
-						<a class="bookmarks-link" href="#">Закладки:0</a>
+					<div class="panel-item bookmarks">
+						<a class="panel-link bookmarks-link" href="#">Закладки:0</a>
 					</div>
-					<div class="cart">
-						<a class="cart-link" href="#">Корзина:0</a>
+					<div class="panel-item cart">
+						<a class="panel-link cart-link" href="#">Корзина:0</a>
 					</div>
-					<div class="checkout">
-						<a class="checkout-link" href="#">Оформить заказ</a>
+					<div class="panel-item checkout">
+						<a class="panel-link checkout-link" href="#">Оформить заказ</a>
 					</div>
 				</div>
-			</header>
+			</div>
+		</header>
 
-			<header class="bottom-header clearfix">
+		<header class="bottom-header">
+			<div class="container clearfix">
 				<sectiion class="about-magazine">
 					<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
 				</sectiion>
@@ -57,14 +59,13 @@
 						<li class="list-item"><a class="item-link" href="#">Контакты</a></li>
 					</ul>
 				</nav>
-			</header>
-		</div>
+			</div>
+		</header>
 	</header>
 
 	<main>
 		<div class="container">
-			<div class="store clearfix">
-				<section class="store-goods">
+			<section class="store-goods clearfix">
 					<article class="store-item materials">
 						<h3 class="store-title">Материалы</h3>
 						<a class="store-btn" href="#">На любой вкус</a>
@@ -77,8 +78,9 @@
 						<h3 class="store-title">Техника</h3>
 						<a class="store-btn" href="#">Для стройки</a>
 					</article>
-				</section>
-
+			</section>
+			
+			<div class="store clearfix">
 				<div class="slider">
 					<input class="btn-1" type="radio" id="btn-1" name="toggle" checked>
 					<input class="btn-2" type="radio" id="btn-3" name="toggle">
@@ -104,7 +106,7 @@
 					</div>
 				</div>
 
-				<section class="store-goods">
+				<section class="store-function clearfix">
 					<article class="store-item discounts">
 						<h3 class="store-title">Скидки 50%</h3>
 						<a class="store-btn" href="#">На 350 товаров</a>
@@ -116,7 +118,7 @@
 				</section>
 			</div>
 
-			<div class="popular">
+			<div class="popular clearfix">
 				<h2 class="popular-title">популярные товары:</h2>
 				<a class="btn popular-btn" href="#">все популярные товары</a>
 			</div>
@@ -171,7 +173,7 @@
 				</article>
 			</section>
 
-			<div class="popular">
+			<div class="popular clearfix">
 				<h2 class="popular-title">популярные производители:</h2>
 				<a class="btn popular-btn" href="#">все производители</a>
 			</div>
@@ -202,12 +204,14 @@
 					<img src="" width="" height="" alt="metabo">
 				</a>
 			</section>
+		</div>
 
-			<div class="our-features clearfix">
+		<div class="our-features">
+			<div class="container">
 				<h2 class="services-title">Сервисы</h2>
 				<p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				
-				<div class="tabs">
+				<div class="tabs clearfix">
 					<ul class="tabs-controls">
 						<li class="tabs-controls-item active">
 							<a href="" class="tabs-controls-link">Доставка</a>
@@ -216,7 +220,7 @@
 							<a href="" class="tabs-controls-link">Гарантия</a>
 						</li>
 						<li class="tabs-controls-item">
-							<a href="" class="tabs-controls-link"></a>
+							<a href="" class="tabs-controls-link">Кредит</a>
 						</li>
 					</ul>
 
@@ -238,8 +242,10 @@
 					</ul>
 				</div>
 			</div>
-
-			<div class="information clearfix">
+		</div>
+		
+		<div class="information">
+			<div class="container clearfix">
 				<section class="about">
 					<h2 class="information-title">компания "техномарт"</h2>
 					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
@@ -268,19 +274,19 @@
 	</main>
 
 	<footer class="main-footer">
-		<div class="container">
-			<footer class="footer-top clearfix">
+		<footer class="footer-top">
+			<div class="container clearfix">
 				<div class="footer-logo">
 					<a class="logo-link" href="#">техномарт</a>
 				</div>
 
-				<nav class="footer-navigation">
-					<ul>
-						<li><a class="link-navigation" href="#">Компания</a></li>
-						<li><a class="link-navigation" href="#">Новости</a></li>
-						<li><a class="link-navigation" href="catalog.html">Каталог</a></li>
-						<li><a class="link-navigation" href="#">Доставка</a></li>
-						<li><a class="link-navigation" href="#">Контакты</a></li>
+				<nav class="footer-nav">
+					<ul class="nav-list">
+						<li class="nav-item"><a class="nav-link" href="#">Компания</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Новости</a></li>
+						<li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Доставка</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
 					</ul>
 				</nav>
 
@@ -290,16 +296,18 @@
 				</div>
 
 				<div class="footer-menu">
-					<ul>
-						<li><a class="menu-link" href="#"></a>Материалы</li>
-						<li><a class="menu-link" href="#"></a>Техника</li>
-						<li><a class="menu-link" href="#"></a>Инструменты</li>
-						<li><a class="menu-link" href="#"></a>Спецпредложения</li>
+					<ul class="menu-list">
+						<li class="menu-item"><a class="menu-link" href="#">Материалы</a></li>
+						<li class="menu-item"><a class="menu-link" href="#">Техника</a></li>
+						<li class="menu-item"><a class="menu-link" href="#">Инструменты</a></li>
+						<li class="menu-item"><a class="menu-link" href="#">Спецпредложения</a></li>
 					</ul>
 				</div>
-			</footer>
+			</div>
+		</footer>
 
-			<footer class="footer-bottom clearfix">
+		<footer class="footer-bottom">
+			<div class="container clearfix">
 				<div class="footer-coopyright">
 					<p class="footer-text">© 2010–2016 Компания «Техномарт»</p>
 					<p class="footer-text">Все права защищены</p>
@@ -316,10 +324,10 @@
 				</div>
 
 				<div class="designed">
-					<p class="footer-text">Разработано —<a href="#" class="footer-link">htmlacademy.ru</a></p>
+					<p class="footer-text">Разработано <a href="#" class="footer-link">htmlacademy.ru</a></p>
 				</div>
-			</footer>
-		</div>
+			</div>
+		</footer>
 	</footer>
 
 	<div class="modal-content">
