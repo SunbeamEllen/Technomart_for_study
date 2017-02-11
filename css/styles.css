@@ -1,7 +1,39 @@
+@font-face {
+  font-family: "cuprum";
+  src: url("../fonts/cuprum.woff2") format("woff2"),
+       url("../fonts/cuprum.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cuprum";
+  src: url("../fonts/cuprumbold.woff2") format("woff2"),
+       url("../fonts/cuprumbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ptsans";
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ptsans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
   min-width: 960px;
   margin: 0 auto;
-  font: 13px/24px "PTSans", "Arial", sans-serif;
+  font: 13px/24px "ptsans", "Arial", sans-serif;
   color: #000;
   background-color: #ffffff;
 }
@@ -19,7 +51,7 @@ body {
 }
 
 .sprite {
-  background-image: url(spritesheet.png);
+  background-image: url(../img/sprite.png);
   background-repeat: no-repeat;
   display: block;
 }
@@ -178,9 +210,9 @@ body {
 }
 
 .panel-item {
-  width: 150px;
   display: inline-block;
   vertical-align: top;
+  width: 150px;
   font-size: 17px;
 }
 
@@ -197,9 +229,9 @@ body {
 }
 
 .bottom-header {
-  background-color: #f1f5f7;
   padding-top: 46px;
   padding-bottom: 60px;
+  background-color: #f1f5f7;
 }
 
 .about-magazine {
@@ -389,8 +421,8 @@ body {
 
 .content-info {
   width: 100%;
-  background-color: #f2f6f8;
   padding: 35px 0;
+  background-color: #f2f6f8;  
 }
 
 .info-title {
@@ -488,7 +520,6 @@ body {
   float: right;
   width: 160px;
 }
-
 /*=========FOOTER END=========*/
 
 .modal-content {
