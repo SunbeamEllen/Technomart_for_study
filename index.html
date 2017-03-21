@@ -14,16 +14,18 @@
 				</div>
 				<div class="user-panel">
 					<div class="panel-item search">
-						<input class="search-input" type="search" name="search" id="search">
-						<label class="search-label" for="search">Поиск</label>
+						<form class="search-form" action="#" method="get">
+							<input class="search-input search-icon" type="search" name="search" id="search" placeholder="Поиск:">
+							<label class="search-label" for="search"></label>
+						</form>
 					</div>
-					<div class="panel-item bookmarks">
-						<a class="panel-link bookmarks-link" href="#">Закладки:0</a>
+					<div class="panel-item">
+						<a class="panel-link bookmarks-link" href="#">Закладки: 0</a>
 					</div>
-					<div class="panel-item cart">
-						<a class="panel-link cart-link" href="#">Корзина:0</a>
+					<div class="panel-item">
+						<a class="panel-link cart-link" href="#">Корзина: 0</a>
 					</div>
-					<div class="panel-item checkout">
+					<div class="panel-item">
 						<a class="panel-link checkout-link" href="#">Оформить заказ</a>
 					</div>
 				</div>
@@ -33,18 +35,18 @@
 		<header class="bottom-header">
 			<div class="container clearfix">
 				<sectiion class="about-magazine">
-					<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+					<p>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
 				</sectiion>
 				<section class="contact-info">
-					<a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
+					<a class="contact-link" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
 					<address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
 				</section>
-				<section class="user-block">
-					<div class="user-block-item">
-						<a class="user-link" href="#">Войти</a>
+				<section class="user-block clearfix">
+					<div class="block-item">
+						<a class="user-link login" href="#">Войти</a>
 					</div>
-					<div class="user-block-item">
-						<a class="user-link" href="#">Регистрация</a>
+					<div class="block-item">
+						<a class="user-link check-in" href="#">Регистрация</a>
 					</div>
 				</section>
 
@@ -70,8 +72,8 @@
 						<h3 class="store-title">Материалы</h3>
 						<a class="store-btn" href="#">На любой вкус</a>
 					</article>
-					<article class="store-item instrumets">
-						<h3 class="store-title">Инструменты</h3>
+					<article class="store-item instruments">
+						<h3 class="store-title">Инструмент</h3>
 						<a class="store-btn" href="#">На все случаи</a>
 					</article>
 					<article class="store-item equipment">
@@ -82,21 +84,26 @@
 			
 			<div class="store clearfix">
 				<div class="slider">
-					<input class="btn-1" type="radio" id="btn-1" name="toggle" checked>
-					<input class="btn-2" type="radio" id="btn-3" name="toggle">
+					<input type="radio" id="btn-1" name="toggle" checked>
+					<input type="radio" id="btn-2" name="toggle">
+					<div class="toggle-btn">
+						<span class="toggle toggle-1"></span>
+						<span class="toggle toggle-2"></span>
+					</div>
 					<div class="slider-controls">
-						<label for="btn-1"></label>
-						<label for="btn-2"></label>
+						<label class="prev" for="btn-1"></label>
+						<label class="next" for="btn-2"></label>
 					</div>
 					<div class="slides">
-						<div class="slide">
+						<div class="slide slide1">
 							<div class="slide-info">
 								<h2 class="slide-title">перфораторы</h2>
 								<p class="slide-text">Настоящие мужские игрушки</p>
 								<a class="btn slide-btn" href="#">открыть каталог</a>
 							</div>
+							
 						</div>
-						<div class="slide">
+						<div class="slide slide2">
 							<div class="slide-info">
 								<h2 class="slide-title">дрели</h2>
 								<p class="slide-text">Соседям на радость!</p>
@@ -126,11 +133,11 @@
 			<section class="goods">
 				<article class="catalog-item">
 					<div class="actions">
-						<a class="buy" href="#" >Купить</a>
-						<a class="bookmark" href="#">В закладки</a>
+						<a class="actions-link buy" href="#" >Купить</a>
+						<a class="actions-link bookmark" href="#">В закладки</a>
 					</div>
 					<div class="item-image">
-						<img src="" width="" height="" alt="BOSCH BFG 9000">
+						<img src="img/bosh-9000.jpg" width="218" height="160" alt="BOSCH BFG 9000">
 					</div>
 					<h3 class="title">Перфоратор BOSCH BFG 9000</h3>
 					<div class="discount">32500 Р.</div>
@@ -138,11 +145,11 @@
 				</article>
 				<article class="catalog-item">
 					<div class="actions">
-						<a class="buy" href="#" >Купить</a>
-						<a class="bookmark" href="#">В закладки</a>
+						<a class="actions-link buy" href="#" >Купить</a>
+						<a class="actions-link bookmark" href="#">В закладки</a>
 					</div>
 					<div class="item-image">
-						<img src="" width="" height="" alt="BOSCH BFG 3000">
+						<img src="img/bosh-3000.jpg" width="218" height="160" alt="BOSCH BFG 3000">
 					</div>
 					<h3 class="title">Перфоратор BOSCH BFG 3000</h3>
 					<div class="discount">22500 Р.</div>
@@ -150,11 +157,11 @@
 				</article>
 				<article class="catalog-item">
 					<div class="actions">
-						<a class="buy" href="#">Купить</a>
-						<a class="bookmark" href="#">В закладки</a>
+						<a class="actions-link buy" href="#">Купить</a>
+						<a class="actions-link bookmark" href="#">В закладки</a>
 					</div>
 					<div class="item-image">
-						<img src="" width="" height="" alt="BOSCH BFG 6000">
+						<img src="img/bosh-6000.jpg" width="218" height="160" alt="BOSCH BFG 6000">
 					</div>
 					<h3 class="title">Перфоратор BOSCH BFG 6000</h3>
 					<div class="discount">30500 Р.</div>
@@ -162,11 +169,11 @@
 				</article>
 				<article class="catalog-item">
 					<div class="actions">
-						<a class="buy" href="#">Купить</a>
-						<a class="bookmark" href="#">В закладки</a>
+						<a class="actions-link buy" href="#">Купить</a>
+						<a class="actions-link bookmark" href="#">В закладки</a>
 					</div>
 					<div class="item-image">
-						<img src="" width="" height="" alt="BOSCH BFG 2000">
+						<img src="img/bosh-2000.jpg" width="218" height="160" alt="BOSCH BFG 2000">
 					</div>
 					<h3 class="title">Перфоратор BOSCH BFG 2000</h3>
 					<div class="price">12500 Р.</div>
@@ -180,28 +187,28 @@
 
 			<section class="producers">
 				<a class="producers-item" href="#">
-					<img src="" width="" height="" alt="bosh">
+					<img src="img/bosch.png" width="220" height="145" alt="bosh">
 				</a>
 				<a class="producers-item" href="#">
-					<img src="" width="" height="" alt="makita">
+					<img src="img/makita.png" width="220" height="145" alt="makita">
 				</a>
 				<a class="producers-item" href="#">
-					<img src="" width="" height="" alt="devalt">
+					<img src="img/dewalt.png" width="220" height="145" alt="devalt">
 				</a>
 				<a class="producers-item" href="#">
-					<img src="" width="" height="" alt="interskol">
+					<img src="img/interskol.png" width="220" height="145" alt="interskol">
 				</a>
 				<a class="producers-item" href="#">
-					<img src="" width="" height="" alt="hitachi">
+					<img src="img/hitachi.png" width="220" height="145" alt="hitachi">
 				</a>
 				<a class="producers-item" href="#">
-					<img src="" width="" height="" alt="lg">
+					<img src="img/lg.png" width="220" height="145" alt="lg">
 				</a>
 				<a class="producers-item" href="#">
-					<img src="" width="" height="" alt="aeg">
+					<img src="img/aeg.png" width="220" height="145" alt="aeg">
 				</a>
 				<a class="producers-item" href="#">
-					<img src="" width="" height="" alt="metabo">
+					<img src="img/metabo.png" width="220" height="145" alt="metabo">
 				</a>
 			</section>
 		</div>
@@ -213,31 +220,30 @@
 				
 				<div class="tabs clearfix">
 					<ul class="tabs-controls">
-						<li class="tabs-controls-item active">
-							<a href="" class="tabs-controls-link">Доставка</a>
+						<li class="controls-item active">
+							<a class="tabs-link" href="#">Доставка</a>
 						</li>
-						<li class="tabs-controls-item">
-							<a href="" class="tabs-controls-link">Гарантия</a>
+						<li class="controls-item">
+							<a class="tabs-link" href="#">Гарантия</a>
 						</li>
-						<li class="tabs-controls-item">
-							<a href="" class="tabs-controls-link">Кредит</a>
+						<li class="controls-item">
+							<a class="tabs-link" href="#">Кредит</a>
 						</li>
 					</ul>
 
 					<ul class="tabs-list">
-						<li class="tabs-item">
-							<h2 class="tabs-item-title">Доставка</h2>
-							<p class="tabs-item-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
-							<img class="tabs-item-image" src="" width="" height="" alt="">
+						<li class="tabs-item tab-1 active">
+							<h2 class="tabs-title">Доставка</h2>
+							<p class="tabs-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, <br>поднимая его на ваш на этаж!</p>
 						</li>
-						<li class="tabs-item">
-							<h2 class="item-title">Гарантия</h2>
-							<p class="tabs-item-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+						<li class="tabs-item tab-2">
+							<h2 class="tabs-title">Гарантия</h2>
+							<p class="tabs-text">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
 						</li>
-						<li class="tabs-item">
-							<h2 class="item-title">Кредит</h2>
-							<p class="tabs-item-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-							<a class="btn tabs-item-btn" href="#">отправить заявку</a>
+						<li class="tabs-item tab-3">
+							<h2 class="tabs-title">Кредит</h2>
+							<p class="tabs-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+							<a class="btn tabs-btn" href="#">отправить заявку</a>
 						</li>
 					</ul>
 				</div>
@@ -247,23 +253,22 @@
 		<div class="information">
 			<div class="container clearfix">
 				<section class="about">
-					<h2 class="information-title">компания "техномарт"</h2>
-					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
-					<p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
+					<h2 class="information-title">компания «Техномарт»</h2>
+					<p class="information-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
+					<p class="information-text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
 					<ul class="information-list">
-						<li class="list-item">Деловые линии</li>
-						<li class="list-item">Автотрейдинг</li>
-						<li class="list-item">ЖелДорЭкспедиция</li>
+						<li class="information-item">Деловые линии</li>
+						<li class="information-item">Автотрейдинг</li>
+						<li class="information-item">ЖелДорЭкспедиция</li>
 					</ul>
 					<a class="btn information-btn" href="#">подробнее о компании</a>
 				</section>
 
 				<section class="contacts">
 					<h2 class="contacts-title">контакты</h2>
-					<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-					<div class="contacts-img">
-						<img src="" width="" height="" alt="map">
-					</div>
+					<p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
+					<img class="contacts-img" src="img/mini-map.jpg" width="300" height="158" alt="mini-map">
+					
 					<div class="map-popup">
 						<img src="" width="" height="" alt="map">
 					</div>
@@ -276,7 +281,7 @@
 	<footer class="main-footer">
 		<footer class="footer-top">
 			<div class="container clearfix">
-				<div class="footer-logo">
+				<div class="logo footer-logo">
 					<a class="logo-link" href="#">техномарт</a>
 				</div>
 
@@ -291,8 +296,8 @@
 				</nav>
 
 				<div class="adress">
-					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-					<a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
+					<p class="adress-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					<a class="adress-link" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
 				</div>
 
 				<div class="footer-menu">
@@ -320,11 +325,13 @@
 				</div>
 
 				<div class="feedback">
-					<p class="footer-text">Обратная связь: <a href="#" class="footer-link"> mail@htmlacademy.ru</a></p>
+					<p class="footer-text">Обратная связь:</p>
+					<a href="#" class="footer-link"> mail@htmlacademy.ru</a>
 				</div>
 
 				<div class="designed">
-					<p class="footer-text">Разработано <a href="#" class="footer-link">htmlacademy.ru</a></p>
+					<p class="footer-text">Разработано —</p>
+					<a href="#" class="footer-link">htmlacademy.ru</a>
 				</div>
 			</div>
 		</footer>
@@ -333,17 +340,19 @@
 	<div class="modal-content">
 		<button class="close" type="button" title="Закрыть">Закрыть</button>
 		<form class="popup-form" action="#" method="post">
-			<div class="position-box">
-				<input class="popup-input" type="text" name="username" placeholder="Представьтесь, пожалуйста" id="username">
-				<label class="popup-label" for="username">Ваше имя:</label>
-			</div>
-			<div class="position-box">
-				<input class="popup-input" type="email" name="mail" placeholder="Для отправки ответа" id="mail">
-				<label class="popup-label" for="mail">Ваш e-mail:</label>
-			</div>
-			<div class="position-box">
-				<textarea class="popup-textarea" name="text" id="text" cols="90" rows="5" placeholder="В свободной форме"></textarea>
-				<label class="textarea-label" for="text">Текст письма:</label>
+			<div class="content-box">
+				<div class="position-box">
+					<input class="popup-input" type="text" name="username" placeholder="Представьтесь, пожалуйста" id="username">
+					<label class="popup-label" for="username">Ваше имя:</label>
+				</div>
+				<div class="position-box">
+					<input class="popup-input" type="email" name="mail" placeholder="Для отправки ответа" id="mail">
+					<label class="popup-label" for="mail">Ваш e-mail:</label>
+				</div>
+				<div class="position-box">
+					<textarea class="popup-textarea" name="text" id="text" cols="90" rows="5" placeholder="В свободной форме"></textarea>
+					<label class="textarea-label" for="text">Текст письма:</label>
+				</div>
 			</div>
 
 			<div class="popup-button">
@@ -351,5 +360,6 @@
 			</div>
 		</form>
 	</div>
+	<script src="js/modal.content.js"></script>
 </body>
 </html>
