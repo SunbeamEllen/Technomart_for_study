@@ -15,8 +15,8 @@
 				<div class="user-panel">
 					<div class="panel-item search">
 						<form class="search-form" action="#" method="get">
-							<input class="search-input search-icon" type="search" name="search" id="search" placeholder="Поиск:">
-							<label class="search-label" for="search"></label>
+							<input class="search-input" type="search" name="search" id="user-search" placeholder="Поиск:">
+							<label class="search-label" for="user-search"></label>
 						</form>
 					</div>
 					<div class="panel-item">
@@ -219,20 +219,18 @@
 				<p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				
 				<div class="tabs clearfix">
+					<input type="radio" name="service" class="tab-delivery" id="delivery" checked>
+          <input type="radio" name="service" class="tab-gurantee" id="gurantee">
+          <input type="radio" name="service" class="tab-credit" id="credit">
+
 					<ul class="tabs-controls">
-						<li class="controls-item active">
-							<a class="tabs-link" href="#">Доставка</a>
-						</li>
-						<li class="controls-item">
-							<a class="tabs-link" href="#">Гарантия</a>
-						</li>
-						<li class="controls-item">
-							<a class="tabs-link" href="#">Кредит</a>
-						</li>
+						<li class="controls-item"><label class="tabs-label" for="delivery">Доставка</label></li>
+						<li class="controls-item"><label class="tabs-label" for="gurantee">Гарантия</label></li>
+						<li class="controls-item"><label class="tabs-label" for="credit">Кредит</label></li>
 					</ul>
 
 					<ul class="tabs-list">
-						<li class="tabs-item tab-1 active">
+						<li class="tabs-item tab-1">
 							<h2 class="tabs-title">Доставка</h2>
 							<p class="tabs-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, <br>поднимая его на ваш на этаж!</p>
 						</li>
@@ -267,11 +265,8 @@
 				<section class="contacts">
 					<h2 class="contacts-title">контакты</h2>
 					<p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-					<img class="contacts-img" src="img/mini-map.jpg" width="300" height="158" alt="mini-map">
+					<img class="contacts-img js-open-map" src="img/mini-map.jpg" width="300" height="158" alt="mini-map">
 					
-					<div class="map-popup">
-						<img src="" width="" height="" alt="map">
-					</div>
 					<a class="btn contacts-btn" href="#">заблудились? напишите нам</a>
 				</section>
 			</div>
@@ -338,7 +333,6 @@
 	</footer>
 
 	<div class="modal-content">
-		<button class="close" type="button" title="Закрыть">Закрыть</button>
 		<form class="popup-form" action="#" method="post">
 			<div class="content-box">
 				<div class="position-box">
@@ -359,7 +353,25 @@
 				<button class="btn modal-btn" type="submit" title="Отправить">Отправить</button>
 			</div>
 		</form>
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 	</div>
-	<script src="js/modal.content.js"></script>
+	<div class="modal-overlay"></div>
+
+	<div class="modal-content-map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+   </div>
+
+	<div class="catalog-popup">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<p class="popup-text">Товар добавлен в корзину!</p>
+			<div class="popup-button">
+				<a class="btn btn-checkout" href="#">Оформить заказ</a>
+				<a class="purchases">Продолжить покупки</a>
+			</div>
+	</div>
+	
+	<script src="js/catalog-content.js"></script>
+	<script src="js/modal-map.js"></script>
+	<script src="js/modal-content.js"></script>
 </body>
 </html>
