@@ -1,29 +1,34 @@
 var link = document.querySelectorAll(".buy");
-var popup = document.querySelector(".catalog-popup");
-var close = popup.querySelector(".modal-content-close");
-var shut = popup.querySelector(".purchases")
+var catPopup = document.querySelector(".catalog-popup");
+var overlay = document.querySelector(".modal-overlay");
+var close = catPopup.querySelector(".modal-content-close");
+var shut = catPopup.querySelector(".purchases")
 
   for (var i = 0; i < link.length; i++) {
     link[i].addEventListener("click", function (event) {
     event.preventDefault();
-    popup.classList.add("catalog-popup-show");
+    catPopup.classList.add("catalog-popup-show");
+    overlay.classList.add("modal-overlay-show");
     });
   }
 
   close.addEventListener("click", function(event) {
     event.preventDefault();
-    popup.classList.remove("catalog-popup-show");
+    catPopup.classList.remove("catalog-popup-show");
+    overlay.classList.remove("modal-overlay-show");
   });
 
   shut.addEventListener("click", function(event) {
     event.preventDefault();
-    popup.classList.remove("catalog-popup-show");
+    catPopup.classList.remove("catalog-popup-show");
+    overlay.classList.remove("modal-overlay-show");
   });
 
   window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
-    if (popup.classList.contains("catalog-popup-show")) {
-        popup.classList.remove("catalog-popup-show");
+    if (catPopup.classList.contains("catalog-popup-show")) {
+        catPopup.classList.remove("catalog-popup-show");
+        overlay.classList.remove("modal-overlay-show");
       }
     }
   });
